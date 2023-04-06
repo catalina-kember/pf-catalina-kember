@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/*===========header========*/
+h1{
+    color: #d4a373;
+    font-size: 4rem;
+    text-align: center;
+    padding: 0.2em 0em;
+    list-style-type: disc;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+    color: #ccd5ae;
+    font-size: 1.5rem;
+    text-align: center;
+    list-style-type: disc;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+.contenedor-header{
+    display: grid;
+    grid-template-rows: 20vh 5vh;
+}
+
+.header-titulos{
+    grid-row: span 1;
+}
+.contenedor-nav{
+    grid-row: span 2;
+}
+
+.offcanvas-title{
+    color: #d4a373;
+    list-style-type: disc;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color: #ccd5ae;
+    font-size: 1.5rem;
+    list-style-type: disc;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/*==========main========*/
+
+.img-main{
+    width: 100%;
+    margin-top: 2em;
+}
+
+.titulo-compartidas{
+    font-size: 2rem;
+    margin-top: 1em;
+    color:#fefae0;
+    background-color:#ccd5ae;
+}
+
+/*======footer=====*/
+
+h3 {
+    color: #d4a373;
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+    list-style-type: disc;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.img-medios-pago {
+    line-height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+}
+.section-nosotros{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+.nosotros{
+    text-decoration: none;
+    color:#acb68d;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+}
