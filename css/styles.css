@@ -4,8 +4,10 @@
     text-decoration: none;
 }
 
-/*===========header========*/
-h1{
+/*===========HEADER========*/
+
+
+h1 {
     color: #d4a373;
     font-size: 4rem;
     text-align: center;
@@ -14,56 +16,64 @@ h1{
     font-family: 'Times New Roman', Times, serif;
 }
 
-h2{
+h2 {
     color: #ccd5ae;
     font-size: 1.5rem;
     text-align: center;
     list-style-type: disc;
-    font-family: 'Times New Roman', Times, serif; 
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.contenedor-header{
+.contenedor-header {
     display: grid;
     grid-template-rows: 20vh 5vh;
 }
 
-.header-titulos{
+.header-titulos {
     grid-row: span 1;
 }
-.contenedor-nav{
+
+.contenedor-nav {
     grid-row: span 2;
 }
 
-.offcanvas-title{
+
+.nav-link {
+    color: #ccd5ae;
+    font-size: 1.5rem;
+    list-style-type: disc;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-brand {
     color: #d4a373;
     list-style-type: disc;
     font-family: 'Times New Roman', Times, serif;
     font-size: 2rem;
 }
 
-.nav-link{
-    color: #ccd5ae;
-    font-size: 1.5rem;
-    list-style-type: disc;
-    font-family: 'Times New Roman', Times, serif;
+/*=====HEADER DESKTP=====*/
+
+@media() {
+
+    .navbar navbar-expand-lg bg-body-tertiary {
+
+        .collapse navbar-collapse {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+
+        .nav-link {
+            color: #ccd5ae;
+            font-size: 1.5rem;
+            list-style-type: disc;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    }
 }
 
-
-/*==========main========*/
-
-.img-main{
-    width: 100%;
-    margin-top: 2em;
-}
-
-.titulo-compartidas{
-    font-size: 2rem;
-    margin-top: 1em;
-    color:#fefae0;
-    background-color:#ccd5ae;
-}
-
-/*======footer=====*/
+/*======FOOTER=====*/
 
 h3 {
     color: #d4a373;
@@ -83,17 +93,16 @@ h3 {
     padding: 20px;
     margin: 10px;
 }
-.section-nosotros{
-    display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
-}
-.nosotros{
+
+.nosotros {
     text-decoration: none;
-    color:#acb68d;
+    color: #acb68d;
     justify-content: center;
     font-size: 1.3rem;
     font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 
@@ -103,4 +112,115 @@ h3 {
     justify-content: center;
     padding: 20px;
     margin: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+/*=========MAIN-INDEX========*/
+
+.img-main {
+    width: 100%;
+    margin-top: 2em;
+}
+
+.titulo-compartidas {
+    font-size: 2rem;
+    margin-top: 1em;
+    color: #fefae0;
+    background-color: #ccd5ae;
+}
+
+@media(min-width 600px)and(orientatio landscape) {
+
+    .img-main {
+        width: 80%;
+        margin: 5%;
+        margin-top: 2em;
+    }
+}
+
+/*======QUIENES SOMOS MIBILE FIRST====*/
+
+.titulo-quienes-somos {
+    margin-top: 2em;
+    background-color:rgb(253, 239, 222);
+    
+}
+
+.img-quienes-somos {
+    width: 100%;
+    margin-top: 1.6em;
+}
+
+.caja-parrafo {
+    margin: 1em;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*========quienes somos desktop=======*/
+
+@media(max-width:600px)and(orientatio:landscape) {
+
+    .quienes-somos {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 2fr 2fr;
+        max-width: 90%;
+    }
+
+}
+
+
+/*========COMO COMPRAR mobile-first======*/
+
+.titulo{
+    margin-top: 1.6em;
+    font-size:xx-large;
+}
+
+.video-como-comprar{
+    width: 100%;
+    margin-top: 1.6em;
+}
+
+.pasos{
+    margin: 1em;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*=========PRODUCTOS mobile first=====*/
+
+.producto{
+    margin-top: 1.6em;
+    font-size:xx-large;
+}
+.sub-productos{
+    background-color: beige;
+}
+.img-productos{
+    width: 100%;
+    margin-top: 1.6em;
+}
+
+
+/*======CONTACTO mobile first=====*/
+
+.titulo{
+    background-color: beige;
+}
+
+.img-contacto{
+    width: 100%;
+    margin-top: 1.6em;
+}
+
+.consultas{
+    gap: 20px;
+    display: block;
+    flex-direction: row;
+    justify-content: center;
 }

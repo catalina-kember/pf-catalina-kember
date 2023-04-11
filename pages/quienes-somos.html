@@ -12,52 +12,91 @@
 </head>
 
 <body>
-
-    <header>
-        <h1>MERAKI</h1>
-        <H2>DECORACION PARA EL HOGAR</H2>
-
-        <nav>
-            <div class="opciones">
-                <a href="../index.html">inicio</a>
-                <a href="./pages/quienes-somos.html">quienes somos</a>
-                <a href="../pages/productos.html">productos</a>
-                <a href="../pages/como-comprar.html">como comprar</a>
-                <a href="../pages/contacto.html">contacto</a>
+    <header class="contenedor-header">
+        <section>
+            <div class="header-titulos">
+                <h1 class="titulo-header">MERAKI</h1>
+                <h2 class="subtitulo-header">DECORACION PARA EL HOGAR</h2>
             </div>
-            <hr>
-        </nav>
+        </section>
+
+        <section>
+            <div class="navbar navbar-expand-lg bg-body-tertiary">
+
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <nav class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/quienes-somos.html">Quienes Somos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/como-comprar.html">Como Comprar</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/productos.html">Productos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+
     </header>
 
+
     <main>
-        <section>
+        <section class="quienes-somos"> 
+
             <h2 class="titulo-quienes-somos">QUIENES SOMOS?</h2>
+
+            <figure>
                 <img  class="img-quienes-somos" src="../img/quienes-somos.jpg" alt="img-quienes-somos">
-        </figure>
+            </figure>
+        
+            <section class="caja-parrafo">
+
+                <p>Nuestro emprendimiento lleva el nombre en honr a un adjetivo en griego:"meraki". El mismo se utiliza para
+                    describir cuando haces algo con el alma, creatividad y amor; poniendo una parte de vos en lo que
+                    hacemos. Como este adjetivo dice, no vendemos solo cosas, cada objeto tiene una parte de nosotras, ya
+                    que lo hacemos cn mucha dedicacion. El emprendimiento nacio el 2 de mayo del 2019, y fue creciendo dia a
+                    dia, gracias a nuestras bellas clientas que confian en nosotra, nos recomiendan, y asi esta familia se
+                    fue haciendo mas grande. Empezams haciendo encargos para decorar casa de amigos y hoy estamos haciendo
+                    todo tipo de pedidos, desde cosas individuales hasta encargos para casamiento o eventos especiales.
+                </p>
+
+            </section>
         </section>
 
-        <section class="caja-parrafo">
-            <p>Nuestro emprendimiento lleva el nombre en honr a un adjetivo en griego:"meraki". El mismo se utiliza para
-                describir cuando haces algo con el alma, creatividad y amor; poniendo una parte de vos en lo que
-                hacemos. Como este adjetivo dice, no vendemos solo cosas, cada objeto tiene una parte de nosotras, ya
-                que lo hacemos cn mucha dedicacion. El emprendimiento nacio el 2 de mayo del 2019, y fue creciendo dia a
-                dia, gracias a nuestras bellas clientas que confian en nosotra, nos recomiendan, y asi esta familia se
-                fue haciendo mas grande. Empezams haciendo encargos para decorar casa de amigos y hoy estamos haciendo
-                todo tipo de pedidos, desde cosas individuales hasta encargos para casamiento o eventos especiales.
-            </p>
-        </section>
     </main>
 
     <footer>
         <hr>
 
-        <div>
+        <section class="section-nosotros">
             <h3>nosotros</h3>
             <ul>
-                <li><a href="../pages/quienes-somos.html">conoce mas de nosotros</a></li>
-                <li><a href="../pages/contacto.html">contactanos</a></li>
+                <li><a class="nosotros" href="./quienes-somos.html">conoce mas de nosotros</a></li>
+                <li><a class="nosotros" href="../pages/contacto.html">contactanos</a></li>
             </ul>
-        </div>
+        </section>
 
         <section>
             <h3>medios de pago</h3>

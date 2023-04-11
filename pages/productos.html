@@ -12,59 +12,91 @@
 </head>
 
 <body>
-    <header>
-        <h1>MERAKI</h1>
-        <H2>DECORACION PARA EL HOGAR</H2>
-
-        <nav>
-            <div class="opciones">
-                <a href="../index.html">inicio</a>
-                <a href="../pages/quienes-somos.html">quienes somos</a>
-                <a href="../pages/productos.html">productos</a>
-                <a href="../pages/como-comprar.html">como comprar</a>
-                <a href="../pages/contacto.html">contacto</a>
+    <header class="contenedor-header">
+        <section>
+            <div class="header-titulos">
+                <h1 class="titulo-header">MERAKI</h1>
+                <h2 class="subtitulo-header">DECORACION PARA EL HOGAR</h2>
             </div>
-            <hr>
-        </nav>
+        </section>
+
+        <section>
+            <div class="navbar navbar-expand-lg bg-body-tertiary">
+
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <nav class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/quienes-somos.html">Quienes Somos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/como-comprar.html">Como Comprar</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/productos.html">Productos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+        </section>
 
     </header>
+
 
     <main>
         <h2 class="producto">TODOS NUESTROS PRODUCTOS</h2>
 
         <section>
             <h3 class="sub-productos">mandalas</h3>
-            <figure class="img-productos">
-                <img src="../img/mandala1.jpg" alt="mandala1">
-                <img src="../img/mandala2.jpg" alt="mandala2">
-                <img src="../img/mandala3.jpg" alt="mandala3">
-                <img src="../img/mandala4.jpg" alt="mandala4">
-                <img src="../img/mandala5.jpg" alt="mandala5">
-                <img src="../img/mandala6.jpg" alt="mandala6">
+            <figure>
+                <img class="img-productos" src="../img/mandala1.jpg" alt="mandala1">
+                <img class="img-productos" src="../img/mandala2.jpg" alt="mandala2">
+                <img class="img-productos" src="../img/mandala3.jpg" alt="mandala3">
+                <img class="img-productos" src="../img/mandala4.jpg" alt="mandala4">
+                <img class="img-productos" src="../img/mandala5.jpg" alt="mandala5">
+                <img class="img-productos" src="../img/mandala6.jpg" alt="mandala6">
             </figure>
         </section>
 
         <section>
             <h3 class="sub-productos">fundas</h3>
-            <figure class="img-productos">
-                <img src="../img/funda1.jpg" alt="funda1">
-                <img src="../img/fundas2.jpg" alt="fundas2">
-                <img src="../img/fundas3.jpg" alt="fundas3">
-                <img src="../img/fundas4.jpg" alt="fundas4">
-                <img src="../img/fundas5.jpg" alt="fundas5">
-                <img src="../img/fundas6.jpg" alt="fundas6">
+            <figure>
+                <img class="img-productos" src="../img/funda1.jpg" alt="funda1">
+                <img class="img-productos" src="../img/fundas2.jpg" alt="fundas2">
+                <img class="img-productos" src="../img/fundas3.jpg" alt="fundas3">
+                <img class="img-productos" src="../img/fundas4.jpg" alt="fundas4">
+                <img class="img-productos" src="../img/fundas5.jpg" alt="fundas5">
+                <img class="img-productos" src="../img/fundas6.jpg" alt="fundas6">
             </figure>
         </section>
 
         <section>
             <h3 class="sub-productos">canastos y canastas</h3>
-            <figure class="img-productos">
-                <img src="../img/canastos1.jpg" alt="canastos1">
-                <img src="../img/canastos2.jpg" alt="canastos2">
-                <img src="../img/canastos3.jpg" alt="canastos3">
-                <img src="../img/canastos4.jpg" alt="canastos4">
-                <img src="../img/canastos5.jpg" alt="canastos5">
-                <img src="../img/canastos6.jpg" alt="canastos6">
+            <figure>
+                <img class="img-productos" src="../img/canastos1.jpg" alt="canastos1">
+                <img class="img-productos" src="../img/canastos2.jpg" alt="canastos2">
+                <img class="img-productos" src="../img/canastos3.jpg" alt="canastos3">
+                <img class="img-productos" src="../img/canastos4.jpg" alt="canastos4">
+                <img class="img-productos" src="../img/canastos5.jpg" alt="canastos5">
+                <img class="img-productos" src="../img/canastos6.jpg" alt="canastos6">
             </figure>
         </section>
 
@@ -72,13 +104,14 @@
 
     <footer>
         <hr>
-        <div>
+
+        <section class="section-nosotros">
             <h3>nosotros</h3>
             <ul>
-                <li><a href="../pages/quienes-somos.html">conoce mas de nosotros</a></li>
-                <li><a href="../pages/contacto.html">contactanos</a></li>
+                <li><a class="nosotros" href="../pages/quienes-somos.html">conoce mas de nosotros</a></li>
+                <li><a class="nosotros" href="../pages/contacto.html">contactanos</a></li>
             </ul>
-        </div>
+        </section>
 
         <section>
             <h3>medios de pago</h3>
@@ -103,8 +136,8 @@
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
