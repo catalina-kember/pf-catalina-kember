@@ -137,8 +137,6 @@ li {
 
 .titulo-quienes-somos {
     margin-top: 2em;
-/* background-color: rgb(253, 239, 222);*/
-
 }
 
 .img-quienes-somos {
@@ -152,7 +150,7 @@ li {
     font-family: 'Times New Roman', Times, serif;
 }
 
-/*========quienes somos desktop=======*/
+/*========QUIENES SOMOS desktop=======*/
 
 @media(min-width:1200px) {
 
@@ -162,6 +160,7 @@ li {
         grid-template-rows: 2fr 1fr;
         max-width: 90%;
     }
+
     .titulo-quienes-somos{
         font-size:4rem;
         display: flex;
@@ -170,6 +169,7 @@ li {
         justify-items: center;
         align-items: center;
     }
+
     .caja-parrafo{
         font-size:  1.6rem;
         grid-column: span 2;
@@ -179,8 +179,6 @@ li {
         justify-items: center;
         align-items: center;
     }
-
-
 }
 
 
@@ -202,6 +200,38 @@ li {
     font-family: 'Times New Roman', Times, serif;
 }
 
+/*=======COMO COMPRAR desktop=====*/
+@media(min-width:1200px){
+
+    .section-como-comprar{
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 2fr 1fr;
+        max-width: 90%;
+    }
+
+    .titulo{
+        font-size:4rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .section-pasos{
+        grid-column: span 2;
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+}
+
+
 /*=========PRODUCTOS mobile first=====*/
 
 .producto {
@@ -221,9 +251,6 @@ li {
 
 /*======CONTACTO mobile first=====*/
 
-.titulo {
-    background-color: beige;
-}
 
 .img-contacto {
     width: 100%;
