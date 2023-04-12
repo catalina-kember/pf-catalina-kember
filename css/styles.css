@@ -52,24 +52,15 @@ h2 {
     font-size: 2rem;
 }
 
-/*=====HEADER DESKTP=====*/
+/*=====HEADER DESKTOP=====*/
 
-@media() {
-
-    .navbar navbar-expand-lg bg-body-tertiary {
-
-        .collapse navbar-collapse {
-            display: flex;
-            justify-content: flex-end;
-        }
-
-
-        .nav-link {
-            color: #ccd5ae;
-            font-size: 1.5rem;
-            list-style-type: disc;
-            font-family: 'Times New Roman', Times, serif;
-        }
+@media(min-width:1200px) {
+    .nav-link {
+        color: #ccd5ae;
+        font-size: 1.5rem;
+        list-style-type: disc;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 1em;
     }
 }
 
@@ -132,12 +123,13 @@ li {
     background-color: #ccd5ae;
 }
 
-@media(min-width 600px)and(orientatio landscape) {
+@media(min-width:1200px) {
 
     .img-main {
         width: 80%;
         margin: 5%;
-        margin-top: 2em;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -145,8 +137,8 @@ li {
 
 .titulo-quienes-somos {
     margin-top: 2em;
-    background-color:rgb(253, 239, 222);
-    
+/* background-color: rgb(253, 239, 222);*/
+
 }
 
 .img-quienes-somos {
@@ -162,31 +154,49 @@ li {
 
 /*========quienes somos desktop=======*/
 
-@media(max-width:600px)and(orientatio:landscape) {
+@media(min-width:1200px) {
 
     .quienes-somos {
         display: grid;
         grid-template-columns: 3fr 2fr;
-        grid-template-rows: 2fr 2fr;
+        grid-template-rows: 2fr 1fr;
         max-width: 90%;
     }
+    .titulo-quienes-somos{
+        font-size:4rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    .caja-parrafo{
+        font-size:  1.6rem;
+        grid-column: span 2;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
 
 }
 
 
 /*========COMO COMPRAR mobile-first======*/
 
-.titulo{
+.titulo {
     margin-top: 1.6em;
-    font-size:xx-large;
+    font-size: xx-large;
 }
 
-.video-como-comprar{
+.video-como-comprar {
     width: 100%;
     margin-top: 1.6em;
 }
 
-.pasos{
+.pasos {
     margin: 1em;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
@@ -194,14 +204,16 @@ li {
 
 /*=========PRODUCTOS mobile first=====*/
 
-.producto{
+.producto {
     margin-top: 1.6em;
-    font-size:xx-large;
+    font-size: xx-large;
 }
-.sub-productos{
+
+.sub-productos {
     background-color: beige;
 }
-.img-productos{
+
+.img-productos {
     width: 100%;
     margin-top: 1.6em;
 }
@@ -209,16 +221,16 @@ li {
 
 /*======CONTACTO mobile first=====*/
 
-.titulo{
+.titulo {
     background-color: beige;
 }
 
-.img-contacto{
+.img-contacto {
     width: 100%;
     margin-top: 1.6em;
 }
 
-.consultas{
+.consultas {
     gap: 20px;
     display: block;
     flex-direction: row;
