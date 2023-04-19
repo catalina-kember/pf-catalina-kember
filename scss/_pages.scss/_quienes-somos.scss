@@ -1,6 +1,7 @@
 .titulo-quienes-somos {
     margin-top: 2em;
     @include tipografia;
+    background-color: $color-bg;
 }
 
 .img-quienes-somos {
@@ -11,6 +12,18 @@
 .caja-parrafo {
     margin: 1em;
     @include tipografia;
+}
+
+//tabletas pequeñas
+@media(min-width:600px){
+    .img-quienes-somos{
+        @include multimedia-tablets;
+    }
+    .caja-parrafo {
+        font-size: 1.5rem;
+        margin: 5%;
+    }
+
 }
 
 //desktop

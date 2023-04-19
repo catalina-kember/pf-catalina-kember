@@ -1,6 +1,7 @@
 .titulo {
     margin-top: 1.6em;
     font-size: xx-large;
+    background-color: $color-bg;
 }
 
 .video-como-comprar {
@@ -13,8 +14,33 @@
     @include tipografia;
 }
 
+
+//tablet
+@media(min-width:600px){
+
+    .video-como-comprar {
+        @include multimedia-tablets;
+    }
+
+    .titulo{
+        background-color: $color-bg;
+        font-size: 2.5rem;
+    }
+
+    .pasos{
+        font-size: 1.5rem;
+    }
+}
+
+
+
 //desktop
 @media(min-width:1200px){
+
+    .video-como-comprar{
+        width: 90%;
+    }
+
     .section-como-comprar{
         display: grid;
         grid-template-columns: 3fr 2fr;
@@ -22,14 +48,25 @@
         max-width: 90%;
         margin-left: 5%;
     }
+
     .titulo{
         font-size:4rem;
         @include centrado(row);
         @include tipografia;
     }
+
     .section-pasos{
         grid-column: span 2;
-        font-size: 1.6rem;
         @include centrado(row);
+    }
+
+    ol{
+        li{
+            font-size: 1.8rem;
+        }
+    }
+    
+    .subtitulo-pasos{
+        font-size: 2.6rem;
     }
 }

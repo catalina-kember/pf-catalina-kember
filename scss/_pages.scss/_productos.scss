@@ -2,12 +2,11 @@
     display: none;
 }
 .producto {
-    margin-top: 1.6em;
     font-size: xx-large;
 }
 
 .sub-productos {
-    background-color: beige;
+    background-color:$color-bg;
 }
 
 .img-productos {
@@ -15,14 +14,40 @@
     margin-top: 1.6em;
 }
 
+//tablets
+@media (min-width:600px) {
+    .img-productos{
+        @include multimedia-tablets;
+        margin-top:1em;
+    }
+    .sub-productos{
+        font-size: 2.7rem;
+    }
+    .producto{
+        font-size: 3rem;
+    }
+    
+}
+
+
+
 //desktop
 @media(min-width:1200px){
     .img-productos{
         width: 15vw;
-        margin-right: 1rem;
+        margin-top: 0%;
     }
+
     .section-productos{
         @include centrado(row)
+        
+    }
 
+    .sub-productos{
+        font-size: 3rem;
+    }
+
+    .producto{
+        font-size: 3.2rem;
     }
 }

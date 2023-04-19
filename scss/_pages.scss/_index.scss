@@ -9,11 +9,23 @@
     color: $color-terciario;
     background-color:$color-secundario;
 }
-
+//tablets
+@media(min-width:600px){
+    .titulo-compartidas{
+        font-size: 2.8rem;
+    }
+    .img-main{
+        @include multimedia-tablets;
+    }
+}
+//desktop
 @media(min-width:1200px){
     .img-main{
         width: 80%;
         margin: 10%;
         @include centrado(row)
+    }
+    .titulo-compartidas{
+        font-size: 3.5rem;
     }
 }

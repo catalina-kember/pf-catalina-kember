@@ -1,5 +1,5 @@
 .img-contacto {
-    width: 90%;
+    width: 100%;
     margin-top: 1.6em;
     @include centrado(row)
 }
@@ -25,6 +25,13 @@
     align-content: center;
 }
 
+//tablets
+@media(min-width:600px){
+    .img-contacto{
+        @include multimedia-tablets;
+    }
+}
+
 //desktop
 
 @media(min-width:1200px){
@@ -32,5 +39,8 @@
         width: 80%;
         margin: 10%;
         @include centrado(row);
+    }
+    .titulo{
+        font-size: 3rem;
     }
 }

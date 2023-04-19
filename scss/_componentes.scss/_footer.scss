@@ -30,11 +30,28 @@ figcaption{
     font-size: 1.4rem;
 }
 
-@media(min-width:1200px){
+//tablets
+@media(min-width:600px){
+    .sub-footer{
+        font-size: 2.5rem;
+    }
     figcaption{
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
     .nosotros{
-        font-size: 1.8rem;
+        font-size: 1.7rem;
+    }
+}
+
+//desktop
+@media(min-width:1200px){
+    .sub-footer{
+        font-size: 3rem;
+    }
+    figcaption{
+        font-size: 2rem;
+    }
+    .nosotros{
+        font-size: 2rem;
     }
 }
