@@ -17,6 +17,10 @@ h2 {
     @include tipografia;
     font-size: 2rem;
 }
+
+
+
+
 //Tabletas pequeñas
 
 @media(min-width:600px){
@@ -27,6 +31,10 @@ h2 {
         font-size: 2.3rem;
     }
 }
+
+
+
+
 //header desktop
 @media(min-width:1200px) {
     h1{

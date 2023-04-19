@@ -25,12 +25,20 @@
     align-content: center;
 }
 
+
+
 //tablets
 @media(min-width:600px){
     .img-contacto{
         @include multimedia-tablets;
     }
+
+    .formulario{
+        @include form-contacto;
+    }
 }
+
+
 
 //desktop
 
@@ -40,6 +48,12 @@
         margin: 10%;
         @include centrado(row);
     }
+
+    .formulario{
+        @include form-contacto;
+    }
+
+
     .titulo{
         font-size: 3rem;
     }

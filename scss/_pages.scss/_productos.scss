@@ -1,6 +1,4 @@
-.carrusel-mandalas{
-    display: none;
-}
+
 .producto {
     font-size: xx-large;
 }
@@ -14,7 +12,10 @@
     margin-top: 1.6em;
 }
 
+
+
 //tablets
+
 @media (min-width:600px) {
     .img-productos{
         @include multimedia-tablets;
@@ -26,21 +27,18 @@
     .producto{
         font-size: 3rem;
     }
-    
 }
 
 
 
 //desktop
+
 @media(min-width:1200px){
     .img-productos{
-        width: 15vw;
-        margin-top: 0%;
-    }
-
-    .section-productos{
-        @include centrado(row)
-        
+        width: 30vw;
+        margin: 1em;
+        flex-wrap: nowrap;
+        align-content: center;
     }
 
     .sub-productos{
@@ -49,5 +47,6 @@
 
     .producto{
         font-size: 3.2rem;
+        margin-top: 1em;
     }
 }

@@ -1,7 +1,6 @@
 .titulo-quienes-somos {
     margin-top: 2em;
     @include tipografia;
-    background-color: $color-bg;
 }
 
 .img-quienes-somos {
@@ -13,6 +12,8 @@
     margin: 1em;
     @include tipografia;
 }
+
+
 
 //tabletas pequeñas
 @media(min-width:600px){
@@ -26,22 +27,28 @@
 
 }
 
+
+
 //desktop
 @media(min-width:1200px) {
 
     .quienes-somos {
         display: grid;
-        grid-template-columns: 3fr 2fr;
+        grid-template-columns: 2fr 2fr;
         grid-template-rows: 2fr 1fr;
-        max-width: 90%;
-        margin-left: 5%;
     }
+
 
     .titulo-quienes-somos{
         font-size:4rem;
         @include centrado(row);
     }
 
+    .img-quienes-somos{
+        @include centrado(row);
+        width: 90%;
+        margin: 0%;
+    }
     .caja-parrafo{
         font-size:  1.6rem;
         grid-column: span 2;
