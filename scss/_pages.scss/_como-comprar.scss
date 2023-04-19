@@ -1,0 +1,35 @@
+.titulo {
+    margin-top: 1.6em;
+    font-size: xx-large;
+}
+
+.video-como-comprar {
+    width: 100%;
+    margin-top: 1.6em;
+}
+
+.pasos {
+    margin: 1em;
+    @include tipografia;
+}
+
+//desktop
+@media(min-width:1200px){
+    .section-como-comprar{
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 2fr 1fr;
+        max-width: 90%;
+        margin-left: 5%;
+    }
+    .titulo{
+        font-size:4rem;
+        @include centrado(row);
+        @include tipografia;
+    }
+    .section-pasos{
+        grid-column: span 2;
+        font-size: 1.6rem;
+        @include centrado(row);
+    }
+}

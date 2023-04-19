@@ -1,0 +1,29 @@
+//header mobile
+h1 {
+    @include tipografia;
+    color: $color-primario;
+    font-size: 4rem;
+    padding: 0.2em 0em;
+}
+
+h2 {
+    @include tipografia;
+    color: $color-secundario;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: $color-secundario;
+    @include tipografia;
+    font-size: 2rem;
+}
+
+//header desktop
+@media(min-width:1200px) {
+    .nav-link {
+        color: $color-secundario;
+        @include tipografia;
+        font-size: 1.5rem;
+        margin-left: 1em;
+    }
+}

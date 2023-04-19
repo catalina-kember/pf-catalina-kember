@@ -1,0 +1,28 @@
+.carrusel-mandalas{
+    display: none;
+}
+.producto {
+    margin-top: 1.6em;
+    font-size: xx-large;
+}
+
+.sub-productos {
+    background-color: beige;
+}
+
+.img-productos {
+    width: 100%;
+    margin-top: 1.6em;
+}
+
+//desktop
+@media(min-width:1200px){
+    .img-productos{
+        width: 15vw;
+        margin-right: 1rem;
+    }
+    .section-productos{
+        @include centrado(row)
+
+    }
+}
