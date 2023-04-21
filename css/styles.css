@@ -129,7 +129,6 @@ h2 {
 .titulo {
   margin-top: 1.6em;
   font-size: xx-large;
-  background-color: beige;
 }
 
 .video-como-comprar {
@@ -146,11 +145,11 @@ h2 {
 
 @media (min-width: 600px) {
   .video-como-comprar {
+    width: fit-content;
     width: 80%;
     margin: 10%;
   }
   .titulo {
-    background-color: beige;
     font-size: 2.5rem;
   }
   .pasos {
@@ -163,7 +162,7 @@ h2 {
   }
   .section-como-comprar {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 2fr 3fr;
     grid-template-rows: 2fr 1fr;
     max-width: 90%;
     margin-left: 5%;
@@ -233,6 +232,11 @@ h2 {
   align-content: center;
 }
 
+.titulo-consultas {
+  background-color: beige;
+  margin-top: 1rem;
+}
+
 @media (min-width: 600px) {
   .img-contacto {
     width: 80%;
@@ -246,8 +250,8 @@ h2 {
 }
 @media (min-width: 1200px) {
   .img-contacto {
-    width: 80%;
-    margin: 10%;
+    width: 60%;
+    margin: 20%;
     display: flex;
     justify-content: center;
     align-content: center;
