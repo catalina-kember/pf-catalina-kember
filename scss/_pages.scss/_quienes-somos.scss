@@ -16,10 +16,11 @@
 
 
 //tabletas pequeñas
-@media(min-width:600px){
-    .img-quienes-somos{
+@media(min-width:600px) {
+    .img-quienes-somos {
         @include multimedia-tablets;
     }
+
     .caja-parrafo {
         font-size: 1.5rem;
         margin: 5%;
@@ -39,18 +40,19 @@
     }
 
 
-    .titulo-quienes-somos{
-        font-size:4rem;
+    .titulo-quienes-somos {
+        font-size: 4rem;
         @include centrado(row);
     }
 
-    .img-quienes-somos{
+    .img-quienes-somos {
         @include centrado(row);
         width: 90%;
         margin: 0%;
     }
-    .caja-parrafo{
-        font-size:  1.6rem;
+
+    .caja-parrafo {
+        font-size: 1.6rem;
         grid-column: span 2;
         @include centrado(row);
     }
