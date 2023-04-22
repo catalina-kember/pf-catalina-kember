@@ -20,28 +20,26 @@ h2 {
 
 
 
-
 //Tabletas pequeñas
 
-@media(min-width:600px){
-    h1{
+@media(min-width:600px) {
+    h1 {
         font-size: 5.5rem;
     }
-    h2{
+
+    h2 {
         font-size: 2.3rem;
     }
 }
 
 
-
-
 //header desktop
 @media(min-width:1200px) {
-    h1{
+    h1 {
         font-size: 7rem;
     }
 
-    h2{
+    h2 {
         font-size: 3rem;
     }
 
