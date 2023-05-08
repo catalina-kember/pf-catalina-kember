@@ -34,13 +34,80 @@ figcaption {
     color: $color-primario;
 }
 
+.footer {
+    display: grid;
+    grid-template-rows: repeat(4 1fr);
+    grid-template-columns: none;
+}
+.section-nosotros {
+    grid-row: 1/2;
+}
 
+.medios-pago {
+    grid-row: 2/3;
+}
+
+.redes {
+    grid-row: 3/4;
+}
+
+.intagram-img {
+    width: 1rem;
+}
+
+.facebook-img {
+    width: 3rem;
+}
+
+.img-medios-pago {
+    width: 6rem;
+}
+
+.sub-footer {
+    font-size: 1.5rem;
+}
 
 //tablets
 
 @media(min-width:600px) {
+    .footer {
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(4 1fr);
+        grid-template-rows: none;
+    }
+
+    .section-nosotros {
+        grid-column: span 1/2;
+    }
+
+    .medios-pago {
+        grid-column: 2/3;
+        display: block;
+
+    }
+
+    .redes {
+        grid-column: 3/4;
+        display: block;
+    }
+
+    .intagram-img {
+        width: 2rem;
+    }
+
+    .facebook-img {
+        width: 4rem;
+    }
+
+    .img-medios-pago {
+        width: 5rem;
+        margin-left: 8px;
+        display: block;
+    }
+
     .sub-footer {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     figcaption {
@@ -58,21 +125,26 @@ figcaption {
 
 @media(min-width:1200px) {
 
-    .footer{
+    .footer {
+        margin-top: 6rem;
         display: grid;
         grid-template-columns: repeat(4 1fr);
     }
-    .section-nosotros{
+
+    .section-nosotros {
         grid-column: span 1/2;
     }
-    .medios-pago{
+
+    .medios-pago {
         grid-column: 2/3;
         display: block;
     }
-    .redes{
-        grid-column:3/4;
+
+    .redes {
+        grid-column: 3/4;
         display: block;
     }
+
     .sub-footer {
         font-size: 3rem;
     }
@@ -84,13 +156,16 @@ figcaption {
     .nosotros {
         font-size: 2rem;
     }
-    .intagram-img{
+
+    .intagram-img {
         width: 3rem;
     }
-    .facebook-img{
+
+    .facebook-img {
         width: 5rem;
     }
-    .img-medios-pago{
+
+    .img-medios-pago {
         width: 6rem;
         margin-left: 8px;
     }
