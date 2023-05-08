@@ -1,7 +1,10 @@
 .img-contacto {
-    width: 100%;
-    margin-top: 1.6em;
+    width: 90%;
     @include centrado(row)
+}
+
+.titulo-consultas {
+    margin-top: 6px;
 }
 
 .formulario {
@@ -11,32 +14,33 @@
     justify-content: center;
 }
 
-.consultas{
+.consultas {
     @include centrado(column);
     flex-wrap: wrap;
 }
 
-.boton-enviar{
+.boton-enviar {
     color: aliceblue;
-    background-color:  #acb68d;
+    background-color: #acb68d;
     padding: 1em;
     border-radius: 30px;
     justify-content: center;
     align-content: center;
 }
-.titulo-consultas{
+
+.titulo-consultas {
     background-color: $color-bg;
     margin-top: 1rem;
 }
 
 
 //tablets
-@media(min-width:600px){
-    .img-contacto{
+@media(min-width:600px) {
+    .img-contacto {
         @include multimedia-tablets;
     }
 
-    .formulario{
+    .formulario {
         @include form-contacto;
     }
 }
@@ -45,19 +49,15 @@
 
 //desktop
 
-@media(min-width:1200px){
+@media(min-width:1200px) {
     .img-contacto {
         width: 60%;
         margin: 20%;
         @include centrado(row);
     }
 
-    .formulario{
+    .formulario {
         @include form-contacto;
     }
-
-
-    .titulo{
-        font-size: 3rem;
-    }
+    
 }

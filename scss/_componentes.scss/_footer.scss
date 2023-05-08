@@ -1,4 +1,4 @@
-h3{
+h3 {
     color: $color-primario;
     font-size: 34px;
     font-weight: 600;
@@ -6,41 +6,48 @@ h3{
 
 }
 
-.img-medios-pago{
+.medios-pago {
     line-height: 200px;
     padding: 20px;
     margin: 10px;
     @include centrado(row);
 }
 
-.nosotros{
+.nosotros {
     color: $color-secundario;
     font-size: 1.4rem;
     @include tipografia;
     @include centrado(row);
 }
 
-.redes{
+.redes {
     @include centrado(row);
     padding: 20px;
     margin: 10px;
 }
 
-figcaption{
+figcaption {
     font-size: 1.4rem;
+}
+
+.redes-sociales {
+    color: $color-primario;
 }
 
 
 
 //tablets
-@media(min-width:600px){
-    .sub-footer{
+
+@media(min-width:600px) {
+    .sub-footer {
         font-size: 2.5rem;
     }
-    figcaption{
+
+    figcaption {
         font-size: 1.7rem;
     }
-    .nosotros{
+
+    .nosotros {
         font-size: 1.7rem;
     }
 }
@@ -48,14 +55,43 @@ figcaption{
 
 
 //desktop
-@media(min-width:1200px){
-    .sub-footer{
+
+@media(min-width:1200px) {
+
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(4 1fr);
+    }
+    .section-nosotros{
+        grid-column: span 1/2;
+    }
+    .medios-pago{
+        grid-column: 2/3;
+        display: block;
+    }
+    .redes{
+        grid-column:3/4;
+        display: block;
+    }
+    .sub-footer {
         font-size: 3rem;
     }
-    figcaption{
+
+    figcaption {
         font-size: 2rem;
     }
-    .nosotros{
+
+    .nosotros {
         font-size: 2rem;
+    }
+    .intagram-img{
+        width: 3rem;
+    }
+    .facebook-img{
+        width: 5rem;
+    }
+    .img-medios-pago{
+        width: 6rem;
+        margin-left: 8px;
     }
 }
