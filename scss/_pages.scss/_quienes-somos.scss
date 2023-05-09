@@ -12,6 +12,33 @@
     margin: 1em;
     @include tipografia;
 }
+.contenedor-tarjetas{
+    display:flex ;
+    justify-content: space-around;
+    align-items:center ;
+    display:grid ;
+    grid-template-rows: 1fr 2fr 2fr;
+}
+
+.trajeta-img{
+    width: 50%;
+    border-radius: 30px;
+    margin-top: 12px;
+}
+
+.tarjeta-descripcion{
+    border: 5%;
+    margin: 5%; 
+}
+.tarjeta-2{
+    grid-row: span 2;
+    @include tarjetas;
+}
+.tarjeta-1{
+    grid-row: span 3;
+    @include tarjetas;
+    margin-bottom: 20px;
+}
 
 
 

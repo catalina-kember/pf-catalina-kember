@@ -3,15 +3,28 @@ h3 {
     font-size: 34px;
     font-weight: 600;
     @include tipografia;
-
 }
+figcaption {
+    font-size: 1.4rem;
+}
+
+.sub-footer {
+    font-size: 2rem;
+}
+
 
 .medios-pago {
     line-height: 200px;
-    padding: 20px;
-    margin: 10px;
-    @include centrado(row);
+    .img-medios-pago {
+        width: 5rem;
+        margin: 15px;
+        display: flex;
+        display: inline;
+        
+    }
 }
+
+
 
 .nosotros {
     color: $color-secundario;
@@ -20,77 +33,39 @@ h3 {
     @include centrado(row);
 }
 
+
 .redes {
-    @include centrado(row);
     padding: 20px;
     margin: 10px;
+    display: flex;
+    display: inline;
+    align-items: center;
+    .redes-sociales {
+        color: $color-primario;
+    }
+
+    .intagram-img {
+        width: 1rem;
+    }
+
+    .facebook-img {
+        width: 3rem;
+        
+    }
+    
 }
 
-figcaption {
-    font-size: 1.4rem;
+
+.section-nosotros{
+    h3{
+        margin-top: 35px;
+    }
 }
 
-.redes-sociales {
-    color: $color-primario;
-}
-
-.footer {
-    display: grid;
-    grid-template-rows: repeat(4 1fr);
-    grid-template-columns: none;
-}
-.section-nosotros {
-    grid-row: 1/2;
-}
-
-.medios-pago {
-    grid-row: 2/3;
-}
-
-.redes {
-    grid-row: 3/4;
-}
-
-.intagram-img {
-    width: 1rem;
-}
-
-.facebook-img {
-    width: 3rem;
-}
-
-.img-medios-pago {
-    width: 6rem;
-}
-
-.sub-footer {
-    font-size: 1.5rem;
-}
 
 //tablets
 
 @media(min-width:600px) {
-    .footer {
-        margin-top: 5rem;
-        display: grid;
-        grid-template-columns: repeat(4 1fr);
-        grid-template-rows: none;
-    }
-
-    .section-nosotros {
-        grid-column: span 1/2;
-    }
-
-    .medios-pago {
-        grid-column: 2/3;
-        display: block;
-
-    }
-
-    .redes {
-        grid-column: 3/4;
-        display: block;
-    }
 
     .intagram-img {
         width: 2rem;
@@ -125,26 +100,7 @@ figcaption {
 
 @media(min-width:1200px) {
 
-    .footer {
-        margin-top: 6rem;
-        display: grid;
-        grid-template-columns: repeat(4 1fr);
-    }
-
-    .section-nosotros {
-        grid-column: span 1/2;
-    }
-
-    .medios-pago {
-        grid-column: 2/3;
-        display: block;
-    }
-
-    .redes {
-        grid-column: 3/4;
-        display: block;
-    }
-
+    
     .sub-footer {
         font-size: 3rem;
     }

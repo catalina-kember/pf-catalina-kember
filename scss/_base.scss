@@ -54,3 +54,15 @@ $color-bg:beige;
     justify-content: center;
     justify-items: center;
 }
+
+@mixin tarjetas{
+    background-color: $color-bg;
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #d4a373 ;
+}
