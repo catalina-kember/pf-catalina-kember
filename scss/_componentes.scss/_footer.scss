@@ -4,93 +4,94 @@ h3 {
     font-weight: 600;
     @include tipografia;
 }
+
 figcaption {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .sub-footer {
     font-size: 2rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
-
 
 .medios-pago {
     line-height: 200px;
-    .img-medios-pago {
-        width: 5rem;
-        margin: 15px;
-        display: flex;
-        display: inline;
-        
-    }
 }
 
-
-
-.nosotros {
-    color: $color-secundario;
-    font-size: 1.4rem;
-    @include tipografia;
-    @include centrado(row);
+.img-medios-pago {
+    width: 4.5rem;
+    margin: 15px;
 }
-
 
 .redes {
     padding: 20px;
     margin: 10px;
-    display: flex;
-    display: inline;
-    align-items: center;
     .redes-sociales {
         color: $color-primario;
     }
-
-    .intagram-img {
-        width: 1rem;
-    }
-
-    .facebook-img {
-        width: 3rem;
-        
-    }
-    
-}
-
-
-.section-nosotros{
-    h3{
-        margin-top: 35px;
-    }
-}
-
-
-//tablets
-
-@media(min-width:600px) {
 
     .intagram-img {
         width: 2rem;
     }
 
     .facebook-img {
-        width: 4rem;
+        width: 4rem;   
+    }   
+}
+.nosotros {
+    color: $color-secundario;
+    font-size: 1.7rem;
+    @include tipografia;
+    @include centrado(row);
+}
+
+.section-nosotros{
+    h3{
+        margin-top: 35px;
+    }
+}
+.section-medios-de-pago{
+    @include centrado(row);
+}
+.section-redes{
+    @include centrado(row);
+}
+
+//tablets
+
+@media(min-width:600px) {
+
+    .intagram-img {
+        width: 3rem;
+    }
+
+    .facebook-img {
+        width: 5rem;
     }
 
     .img-medios-pago {
-        width: 5rem;
-        margin-left: 8px;
-        display: block;
+        width: 6rem;
+        margin: 30px;
     }
 
     .sub-footer {
-        font-size: 2rem;
+        font-size: 3.5rem;
     }
 
     figcaption {
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
 
     .nosotros {
-        font-size: 1.7rem;
+        font-size: 2rem;
+    }
+    .section-medios-de-pago{
+        @include centrado(row);
+    }
+    .section-redes{
+        @include centrado(row);
     }
 }
 
@@ -99,8 +100,21 @@ figcaption {
 //desktop
 
 @media(min-width:1200px) {
-
     
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .section-medios-de-pago{
+        @include centrado(row);
+    }
+
+    .section-redes{
+        @include centrado(row);
+    }
+
     .sub-footer {
         font-size: 3rem;
     }
@@ -114,15 +128,15 @@ figcaption {
     }
 
     .intagram-img {
-        width: 3rem;
+        width: 7rem;
     }
 
     .facebook-img {
-        width: 5rem;
+        width: 12rem;
     }
 
     .img-medios-pago {
         width: 6rem;
-        margin-left: 8px;
+        margin-left: 10px;
     }
 }

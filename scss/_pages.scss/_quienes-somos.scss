@@ -1,49 +1,63 @@
 .titulo-quienes-somos {
     margin-top: 2em;
     @include tipografia;
+    font-size: 2rem;
 }
 
 .img-quienes-somos {
-    width: 100%;
+    width: 95%;
     margin-top: 1.6em;
 }
 
 .caja-parrafo {
-    margin: 1em;
+    margin: 2em;
     @include tipografia;
-}
-.contenedor-tarjetas{
-    display:flex ;
-    justify-content: space-around;
-    align-items:center ;
-    display:grid ;
-    grid-template-rows: 1fr 2fr 2fr;
+    font-size: 1.4rem;
 }
 
-.trajeta-img{
+.contenedor-tarjetas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 21r;
+}
+
+.trajeta-img {
     width: 50%;
     border-radius: 30px;
     margin-top: 12px;
 }
 
-.tarjeta-descripcion{
+.tarjeta-descripcion {
     border: 5%;
-    margin: 5%; 
+    margin: 4%;
+    font-size: 1.2rem;
+    @include tipografia
 }
-.tarjeta-2{
+
+.tarjeta-2 {
     grid-row: span 2;
     @include tarjetas;
 }
-.tarjeta-1{
+
+.tarjeta-1 {
     grid-row: span 3;
     @include tarjetas;
     margin-bottom: 20px;
+    width: 300px;
+    height: 400px;
 }
 
+.tarjetas-titulo {
+    font-size: 2rem;
+    background-color: $color-bg;
+}
 
 
 //tabletas pequeñas
 @media(min-width:600px) {
+
     .img-quienes-somos {
         @include multimedia-tablets;
     }
@@ -51,6 +65,13 @@
     .caja-parrafo {
         font-size: 1.5rem;
         margin: 5%;
+    }
+    .tarjeta-descripcion{
+        font-size: 1.3rem;
+    }
+    .tarjetas-titulo{
+        font-size: 3rem;
+        margin-bottom: 10px;
     }
 
 }
@@ -75,12 +96,35 @@
     .img-quienes-somos {
         @include centrado(row);
         width: 90%;
-        margin: 0%;
+        margin:0%;
     }
 
     .caja-parrafo {
         font-size: 1.6rem;
         grid-column: span 2;
         @include centrado(row);
+    }
+
+    .tarjetas{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-top: 30px;
+    }
+    .tarjeta-1{
+        width: 400px;
+        height: 500px;
+    }
+    .tarjeta-2{
+        width: 400px;
+        height: 500px;
+    }
+    .tarjeta-descripcion{
+        font-size: 1.5rem;
+    }
+    .tarjetas-titulo{
+        font-size: 3rem;
     }
 }

@@ -15,42 +15,46 @@ h3 {
 }
 
 figcaption {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .sub-footer {
   font-size: 2rem;
-  display: flex;
-  align-content: center;
-  justify-content: center;
 }
 
 .medios-pago {
   line-height: 200px;
+  display: flex;
+  align-content: center;
 }
 
 .img-medios-pago {
-  width: 4.5rem;
+  width: 3.5rem;
   margin: 15px;
+  display: block;
 }
 
 .redes {
   padding: 20px;
   margin: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
 }
 .redes .redes-sociales {
   color: #d4a373;
 }
 .redes .intagram-img {
-  width: 2rem;
+  width: 2.5rem;
 }
 .redes .facebook-img {
-  width: 4rem;
+  width: 3.5rem;
 }
 
 .nosotros {
   color: #ccd5ae;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   list-style-type: disc;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
@@ -66,83 +70,29 @@ figcaption {
   margin-top: 35px;
 }
 
-.section-medios-de-pago {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: row;
-  justify-items: center;
-  align-items: center;
-}
-
-.section-redes {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: row;
-  justify-items: center;
-  align-items: center;
-}
-
 @media (min-width: 600px) {
   .intagram-img {
-    width: 3rem;
+    width: 2rem;
   }
   .facebook-img {
-    width: 5rem;
+    width: 4rem;
   }
   .img-medios-pago {
-    width: 6rem;
-    margin: 30px;
+    width: 5rem;
+    margin-left: 8px;
+    display: block;
   }
   .sub-footer {
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
   figcaption {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .nosotros {
-    font-size: 2rem;
-  }
-  .section-medios-de-pago {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: row;
-    justify-items: center;
-    align-items: center;
-  }
-  .section-redes {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: row;
-    justify-items: center;
-    align-items: center;
+    font-size: 1.7rem;
   }
 }
 @media (min-width: 1200px) {
-  .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .section-medios-de-pago {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: row;
-    justify-items: center;
-    align-items: center;
-  }
-  .section-redes {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: row;
-    justify-items: center;
-    align-items: center;
-  }
   .sub-footer {
     font-size: 3rem;
   }
@@ -153,14 +103,14 @@ figcaption {
     font-size: 2rem;
   }
   .intagram-img {
-    width: 7rem;
+    width: 6rem;
   }
   .facebook-img {
-    width: 12rem;
+    width: 11rem;
   }
   .img-medios-pago {
     width: 6rem;
-    margin-left: 10px;
+    margin-left: 8px;
   }
 }
 h1 {
@@ -442,7 +392,6 @@ h2 {
   list-style-type: disc;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
-  font-size: 2rem;
 }
 
 .img-quienes-somos {
@@ -451,19 +400,18 @@ h2 {
 }
 
 .caja-parrafo {
-  margin: 2em;
+  margin: 1em;
   list-style-type: disc;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
-  font-size: 1.4rem;
 }
 
 .contenedor-tarjetas {
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
   display: grid;
-  grid-template-rows: 1fr 1fr 21r;
+  grid-template-rows: 1fr 2fr 2fr;
 }
 
 .trajeta-img {
@@ -474,11 +422,7 @@ h2 {
 
 .tarjeta-descripcion {
   border: 5%;
-  margin: 4%;
-  font-size: 1.2rem;
-  list-style-type: disc;
-  font-family: "Times New Roman", Times, serif;
-  text-align: center;
+  margin: 5%;
 }
 
 .tarjeta-2 {
@@ -506,13 +450,6 @@ h2 {
   align-items: center;
   border: 2px solid #d4a373;
   margin-bottom: 20px;
-  width: 300px;
-  height: 400px;
-}
-
-.tarjetas-titulo {
-  font-size: 2rem;
-  background-color: beige;
 }
 
 @media (min-width: 600px) {
@@ -523,13 +460,6 @@ h2 {
   .caja-parrafo {
     font-size: 1.5rem;
     margin: 5%;
-  }
-  .tarjeta-descripcion {
-    font-size: 1.3rem;
-  }
-  .tarjetas-titulo {
-    font-size: 3rem;
-    margin-bottom: 10px;
   }
 }
 @media (min-width: 1200px) {
@@ -567,28 +497,6 @@ h2 {
     justify-items: center;
     align-items: center;
   }
-  .tarjetas {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    margin-top: 30px;
-  }
-  .tarjeta-1 {
-    width: 400px;
-    height: 500px;
-  }
-  .tarjeta-2 {
-    width: 400px;
-    height: 500px;
-  }
-  .tarjeta-descripcion {
-    font-size: 1.5rem;
-  }
-  .tarjetas-titulo {
-    font-size: 3rem;
-  }
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=css.styles.css.map */
