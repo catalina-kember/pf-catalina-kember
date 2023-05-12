@@ -1,10 +1,13 @@
+body{
+    overflow-x: hidden
+}
 
 .producto {
     font-size: x-large;
 }
 
 .sub-productos {
-    background-color:$color-bg;
+    background-color: $color-bg;
 }
 
 .img-productos {
@@ -17,15 +20,17 @@
 //tablets
 
 @media (min-width:600px) {
-    .img-productos{
+    .img-productos {
         @include multimedia-tablets;
-        margin-top:1em;
+        margin-top: 1em;
         width: 90%;
     }
-    .sub-productos{
+
+    .sub-productos {
         font-size: 2.7rem;
     }
-    .producto{
+
+    .producto {
         font-size: 2rem;
     }
 }
@@ -34,19 +39,19 @@
 
 //desktop
 
-@media(min-width:1200px){
-    .img-productos{
+@media(min-width:1200px) {
+    .img-productos {
         width: 25vw;
         margin: 1em;
         flex-wrap: nowrap;
         align-content: center;
     }
 
-    .sub-productos{
+    .sub-productos {
         font-size: 3.5rem;
     }
 
-    .producto{
+    .producto {
         font-size: 3.2rem;
         margin-top: 1em;
     }

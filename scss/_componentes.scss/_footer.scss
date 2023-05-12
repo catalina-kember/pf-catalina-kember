@@ -25,6 +25,7 @@ h3 {
 
 .section-nosotros {
     @include centrado(column);
+
     h3 {
         margin-top: 35px;
     }
@@ -32,7 +33,7 @@ h3 {
 
 //medios de pago
 
-.section-medios-de-pago{
+.section-medios-de-pago {
     @include centrado(row);
 }
 
@@ -43,7 +44,7 @@ h3 {
 
 //redes
 
-.section-redes{
+.section-redes {
     @include centrado(column);
 }
 
@@ -70,10 +71,11 @@ h3 {
 //tablets
 
 @media(min-width:600px) {
-    
+
     .sub-footer {
         font-size: 2.5rem;
     }
+
     //nosotros
 
     .nosotros {
@@ -89,6 +91,7 @@ h3 {
     .facebook-img {
         width: 5rem;
     }
+
     figcaption {
         font-size: 2rem;
     }
@@ -105,11 +108,11 @@ h3 {
 
     }
 
-    .section-medios-de-pago{
+    .section-medios-de-pago {
         @include centrado(row);
     }
 
-    
+
 }
 
 
@@ -145,15 +148,15 @@ h3 {
     }
 
     .intagram-img {
-        width: 3rem;
+        width: 2.3rem;
     }
 
     .facebook-img {
-        width: 5.2rem;
+        width: 5rem;
     }
 
     //medios de pago
-    .section-medios-de-pago{
+    .section-medios-de-pago {
         @include centrado(row);
     }
 

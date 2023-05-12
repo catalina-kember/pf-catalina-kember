@@ -149,10 +149,10 @@ h3 {
     font-size: 2.3rem;
   }
   .intagram-img {
-    width: 3rem;
+    width: 2.3rem;
   }
   .facebook-img {
-    width: 5.2rem;
+    width: 5rem;
   }
   .section-medios-de-pago {
     display: flex;
@@ -215,6 +215,10 @@ h2 {
     font-size: 2rem;
   }
 }
+body {
+  overflow-x: hidden;
+}
+
 .titulo {
   margin-top: 1.6em;
   font-size: xx-large;
@@ -284,6 +288,10 @@ h2 {
     font-size: 2.6rem;
   }
 }
+body {
+  overflow-x: hidden;
+}
+
 .img-contacto {
   width: 100%;
   display: flex;
@@ -373,6 +381,10 @@ h2 {
     justify-items: center;
   }
 }
+body {
+  overflow-x: hidden;
+}
+
 .img-main {
   width: 100%;
   margin-top: 2em;
@@ -409,6 +421,10 @@ h2 {
     font-size: 3.5rem;
   }
 }
+body {
+  overflow-x: hidden;
+}
+
 .producto {
   font-size: x-large;
 }
@@ -451,6 +467,10 @@ h2 {
     margin-top: 1em;
   }
 }
+body {
+  overflow-x: hidden;
+}
+
 .titulo-quienes-somos {
   margin-top: 1.6em;
   list-style-type: disc;

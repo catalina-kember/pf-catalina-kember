@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden
+}
+
 .titulo {
     margin-top: 1.6em;
     font-size: xx-large;
@@ -15,18 +19,18 @@
 
 
 //tablet
-@media(min-width:600px){
+@media(min-width:600px) {
 
     .video-como-comprar {
         width: fit-content;
         @include multimedia-tablets;
     }
 
-    .titulo{
+    .titulo {
         font-size: 2.5rem;
     }
 
-    .pasos{
+    .pasos {
         font-size: 1.5rem;
     }
 }
@@ -34,13 +38,13 @@
 
 
 //desktop
-@media(min-width:1200px){
+@media(min-width:1200px) {
 
-    .video-como-comprar{
+    .video-como-comprar {
         width: 90%;
     }
 
-    .section-como-comprar{
+    .section-como-comprar {
         display: grid;
         grid-template-columns: 2fr 3fr;
         grid-template-rows: 2fr 1fr;
@@ -48,24 +52,24 @@
         margin-left: 2%;
     }
 
-    .titulo{
-        font-size:4rem;
+    .titulo {
+        font-size: 4rem;
         @include centrado(row);
         @include tipografia;
     }
 
-    .section-pasos{
+    .section-pasos {
         grid-column: span 2;
         @include centrado(row);
     }
 
-    ol{
-        li{
+    ol {
+        li {
             font-size: 1.8rem;
         }
     }
-    
-    .subtitulo-pasos{
+
+    .subtitulo-pasos {
         font-size: 2.6rem;
     }
 }
