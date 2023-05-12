@@ -14,41 +14,11 @@ h3 {
   text-align: center;
 }
 
-figcaption {
-  font-size: 1.6rem;
-}
-
 .sub-footer {
   font-size: 2rem;
   display: flex;
   align-content: center;
   justify-content: center;
-}
-
-.medios-pago {
-  line-height: 200px;
-}
-
-.img-medios-pago {
-  width: 3.8rem;
-  margin-left: 4px;
-}
-
-.redes {
-  padding: 20px;
-  margin: 10px;
-}
-
-.redes-sociales {
-  color: #d4a373;
-}
-
-.intagram-img {
-  width: 1.5rem;
-}
-
-.facebook-img {
-  width: 4rem;
 }
 
 .nosotros {
@@ -77,27 +47,64 @@ figcaption {
   margin-top: 35px;
 }
 
+.section-medios-de-pago {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+}
+
+.img-medios-pago {
+  width: 3.8rem;
+  margin-left: 4px;
+}
+
+.section-redes {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.redes {
+  padding: 20px;
+  margin: 10px;
+}
+
+.redes-sociales {
+  color: #d4a373;
+  font-size: 1.6rem;
+}
+
+.intagram-img {
+  width: 1.5rem;
+}
+
+.facebook-img {
+  width: 4rem;
+}
+
 @media (min-width: 600px) {
+  .sub-footer {
+    font-size: 2.5rem;
+  }
+  .nosotros {
+    font-size: 2rem;
+  }
   .intagram-img {
     width: 2rem;
   }
   .facebook-img {
     width: 5rem;
   }
-  .img-medios-pago {
-    width: 5rem;
-    margin: 30px;
-  }
-  .sub-footer {
-    font-size: 2.5rem;
-  }
   figcaption {
     font-size: 2rem;
   }
-  .nosotros {
-    font-size: 2rem;
-  }
-  .section-medios-de-pago {
+  .section-redes {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -105,7 +112,11 @@ figcaption {
     justify-items: center;
     align-items: center;
   }
-  .section-redes {
+  .img-medios-pago {
+    width: 5rem;
+    margin: 30px;
+  }
+  .section-medios-de-pago {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -120,13 +131,11 @@ figcaption {
     flex-direction: row;
     justify-content: space-around;
   }
-  .section-medios-de-pago {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: row;
-    justify-items: center;
-    align-items: center;
+  .sub-footer {
+    font-size: 2.5rem;
+  }
+  .nosotros {
+    font-size: 2rem;
   }
   .section-redes {
     display: flex;
@@ -136,20 +145,22 @@ figcaption {
     justify-items: center;
     align-items: center;
   }
-  .sub-footer {
-    font-size: 2.5rem;
-  }
   figcaption {
-    font-size: 2rem;
-  }
-  .nosotros {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
   .intagram-img {
-    width: 6rem;
+    width: 3rem;
   }
   .facebook-img {
-    width: 11rem;
+    width: 5.2rem;
+  }
+  .section-medios-de-pago {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
   }
   .img-medios-pago {
     width: 6rem;

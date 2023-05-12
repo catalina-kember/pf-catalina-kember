@@ -5,10 +5,6 @@ h3 {
     @include tipografia;
 }
 
-figcaption {
-    font-size: 1.6rem;
-}
-
 .sub-footer {
     font-size: 2rem;
     display: flex;
@@ -16,31 +12,9 @@ figcaption {
     justify-content: center;
 }
 
-.medios-pago {
-    line-height: 200px;
-}
 
-.img-medios-pago {
-    width: 3.8rem;
-    margin-left: 4px;
-}
 
-.redes {
-    padding: 20px;
-    margin: 10px;
-}
-
-.redes-sociales {
-    color: $color-primario;
-}
-
-.intagram-img {
-    width: 1.5rem;
-}
-
-.facebook-img {
-    width: 4rem;
-}
+//nosotros
 
 .nosotros {
     color: $color-secundario;
@@ -56,10 +30,57 @@ figcaption {
     }
 }
 
+//medios de pago
+
+.section-medios-de-pago{
+    @include centrado(row);
+}
+
+.img-medios-pago {
+    width: 3.8rem;
+    margin-left: 4px;
+}
+
+//redes
+
+.section-redes{
+    @include centrado(column);
+}
+
+
+.redes {
+    padding: 20px;
+    margin: 10px;
+}
+
+.redes-sociales {
+    color: $color-primario;
+    font-size: 1.6rem;
+}
+
+.intagram-img {
+    width: 1.5rem;
+}
+
+.facebook-img {
+    width: 4rem;
+}
+
 
 //tablets
 
 @media(min-width:600px) {
+    
+    .sub-footer {
+        font-size: 2.5rem;
+    }
+    //nosotros
+
+    .nosotros {
+        font-size: 2rem;
+    }
+
+    //redes
 
     .intagram-img {
         width: 2rem;
@@ -68,6 +89,15 @@ figcaption {
     .facebook-img {
         width: 5rem;
     }
+    figcaption {
+        font-size: 2rem;
+    }
+
+    .section-redes {
+        @include centrado(row);
+    }
+
+    //medios de pago
 
     .img-medios-pago {
         width: 5rem;
@@ -75,25 +105,11 @@ figcaption {
 
     }
 
-    .sub-footer {
-        font-size: 2.5rem;
-    }
-
-    figcaption {
-        font-size: 2rem;
-    }
-
-    .nosotros {
-        font-size: 2rem;
-    }
-
-    .section-medios-de-pago {
+    .section-medios-de-pago{
         @include centrado(row);
     }
 
-    .section-redes {
-        @include centrado(row);
-    }
+    
 }
 
 
@@ -108,32 +124,37 @@ figcaption {
         justify-content: space-around;
     }
 
-    .section-medios-de-pago {
-        @include centrado(row);
+    .sub-footer {
+        font-size: 2.5rem;
     }
+
+    //nosotros
+    .nosotros {
+        font-size: 2rem;
+    }
+
+
+    //redes
 
     .section-redes {
         @include centrado(row);
     }
 
-    .sub-footer {
-        font-size: 2.5rem;
-    }
-
     figcaption {
-        font-size: 2rem;
-    }
-
-    .nosotros {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
 
     .intagram-img {
-        width: 6rem;
+        width: 3rem;
     }
 
     .facebook-img {
-        width: 11rem;
+        width: 5.2rem;
+    }
+
+    //medios de pago
+    .section-medios-de-pago{
+        @include centrado(row);
     }
 
     .img-medios-pago {
