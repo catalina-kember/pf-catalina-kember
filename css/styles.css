@@ -30,21 +30,24 @@ figcaption {
 }
 
 .img-medios-pago {
-  width: 4.5rem;
-  margin: 15px;
+  width: 3.8rem;
+  margin-left: 4px;
 }
 
 .redes {
   padding: 20px;
   margin: 10px;
 }
-.redes .redes-sociales {
+
+.redes-sociales {
   color: #d4a373;
 }
-.redes .intagram-img {
-  width: 2rem;
+
+.intagram-img {
+  width: 1.5rem;
 }
-.redes .facebook-img {
+
+.facebook-img {
   width: 4rem;
 }
 
@@ -57,46 +60,36 @@ figcaption {
   display: flex;
   justify-content: center;
   align-content: center;
-  flex-direction: row;
+  flex-direction: column;
   justify-items: center;
   align-items: center;
 }
 
+.section-nosotros {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
 .section-nosotros h3 {
   margin-top: 35px;
 }
 
-.section-medios-de-pago {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: row;
-  justify-items: center;
-  align-items: center;
-}
-
-.section-redes {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: row;
-  justify-items: center;
-  align-items: center;
-}
-
 @media (min-width: 600px) {
   .intagram-img {
-    width: 3rem;
+    width: 2rem;
   }
   .facebook-img {
     width: 5rem;
   }
   .img-medios-pago {
-    width: 6rem;
+    width: 5rem;
     margin: 30px;
   }
   .sub-footer {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
   figcaption {
     font-size: 2rem;
@@ -144,7 +137,7 @@ figcaption {
     align-items: center;
   }
   .sub-footer {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   figcaption {
     font-size: 2rem;
@@ -209,7 +202,6 @@ h2 {
     font-family: "Times New Roman", Times, serif;
     text-align: center;
     font-size: 2rem;
-    margin-left: 1em;
   }
 }
 .titulo {
@@ -250,8 +242,8 @@ h2 {
     display: grid;
     grid-template-columns: 2fr 3fr;
     grid-template-rows: 2fr 1fr;
-    max-width: 90%;
-    margin-left: 5%;
+    max-width: 80%;
+    margin-left: 2%;
   }
   .titulo {
     font-size: 4rem;
@@ -282,11 +274,11 @@ h2 {
   }
 }
 .img-contacto {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
-  flex-direction: row;
+  flex-direction: column;
   justify-items: center;
   align-items: center;
 }
@@ -297,9 +289,12 @@ h2 {
 
 .formulario {
   gap: 20px;
-  display: block;
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
   justify-content: center;
+  justify-items: center;
 }
 
 .consultas {
@@ -330,6 +325,13 @@ h2 {
   .img-contacto {
     width: 80%;
     margin: 10%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
   }
   .formulario {
     display: flex;
@@ -420,7 +422,7 @@ h2 {
     font-size: 2.7rem;
   }
   .producto {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 @media (min-width: 1200px) {
@@ -447,8 +449,8 @@ h2 {
 }
 
 .img-quienes-somos {
-  width: 90%;
-  margin-top: 1.6em;
+  width: 100%;
+  margin: 0%;
 }
 
 .caja-parrafo {
@@ -456,7 +458,7 @@ h2 {
   list-style-type: disc;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .tarjetas-contenedor {
@@ -544,7 +546,7 @@ h2 {
     margin: 0%;
   }
   .caja-parrafo {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     grid-column: span 2;
     display: flex;
     justify-content: center;
@@ -555,8 +557,10 @@ h2 {
   }
   .tarjetas-contenedor {
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    justify-items: center;
     align-items: center;
     gap: 40px;
     margin-top: 30px;

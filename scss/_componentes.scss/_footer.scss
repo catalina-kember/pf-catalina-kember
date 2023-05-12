@@ -21,53 +21,48 @@ figcaption {
 }
 
 .img-medios-pago {
-    width: 4.5rem;
-    margin: 15px;
+    width: 3.8rem;
+    margin-left: 4px;
 }
 
 .redes {
     padding: 20px;
     margin: 10px;
-    .redes-sociales {
-        color: $color-primario;
-    }
+}
 
-    .intagram-img {
-        width: 2rem;
-    }
+.redes-sociales {
+    color: $color-primario;
+}
 
-    .facebook-img {
-        width: 4rem;   
-    }   
+.intagram-img {
+    width: 1.5rem;
+}
+
+.facebook-img {
+    width: 4rem;
 }
 
 .nosotros {
     color: $color-secundario;
     font-size: 1.7rem;
     @include tipografia;
-    @include centrado(row);
+    @include centrado(column);
 }
 
-.section-nosotros{
-    h3{
+.section-nosotros {
+    @include centrado(column);
+    h3 {
         margin-top: 35px;
     }
 }
 
-.section-medios-de-pago{
-    @include centrado(row);
-}
-
-.section-redes{
-    @include centrado(row);
-}
 
 //tablets
 
 @media(min-width:600px) {
 
     .intagram-img {
-        width: 3rem;
+        width: 2rem;
     }
 
     .facebook-img {
@@ -75,12 +70,13 @@ figcaption {
     }
 
     .img-medios-pago {
-        width: 6rem;
+        width: 5rem;
         margin: 30px;
+
     }
 
     .sub-footer {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
     figcaption {
@@ -90,10 +86,12 @@ figcaption {
     .nosotros {
         font-size: 2rem;
     }
-    .section-medios-de-pago{
+
+    .section-medios-de-pago {
         @include centrado(row);
     }
-    .section-redes{
+
+    .section-redes {
         @include centrado(row);
     }
 }
@@ -103,23 +101,23 @@ figcaption {
 //desktop
 
 @media(min-width:1200px) {
-    
-    .footer{
+
+    .footer {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
 
-    .section-medios-de-pago{
+    .section-medios-de-pago {
         @include centrado(row);
     }
 
-    .section-redes{
+    .section-redes {
         @include centrado(row);
     }
 
     .sub-footer {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     figcaption {
