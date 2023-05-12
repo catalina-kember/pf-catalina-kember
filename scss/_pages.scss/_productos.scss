@@ -1,6 +1,6 @@
 
 .producto {
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .sub-productos {
@@ -20,6 +20,7 @@
     .img-productos{
         @include multimedia-tablets;
         margin-top:1em;
+        width: 90%;
     }
     .sub-productos{
         font-size: 2.7rem;
@@ -35,14 +36,14 @@
 
 @media(min-width:1200px){
     .img-productos{
-        width: 30vw;
+        width: 25vw;
         margin: 1em;
         flex-wrap: nowrap;
         align-content: center;
     }
 
     .sub-productos{
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .producto{

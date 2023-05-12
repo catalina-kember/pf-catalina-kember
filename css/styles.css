@@ -153,10 +153,10 @@ figcaption {
     font-size: 2rem;
   }
   .intagram-img {
-    width: 7rem;
+    width: 6rem;
   }
   .facebook-img {
-    width: 12rem;
+    width: 11rem;
   }
   .img-medios-pago {
     width: 6rem;
@@ -397,7 +397,7 @@ h2 {
   }
 }
 .producto {
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 .sub-productos {
@@ -414,6 +414,7 @@ h2 {
     width: 80%;
     margin: 10%;
     margin-top: 1em;
+    width: 90%;
   }
   .sub-productos {
     font-size: 2.7rem;
@@ -424,13 +425,13 @@ h2 {
 }
 @media (min-width: 1200px) {
   .img-productos {
-    width: 30vw;
+    width: 25vw;
     margin: 1em;
     flex-wrap: nowrap;
     align-content: center;
   }
   .sub-productos {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .producto {
     font-size: 3.2rem;
@@ -438,7 +439,7 @@ h2 {
   }
 }
 .titulo-quienes-somos {
-  margin-top: 2em;
+  margin-top: 1.6em;
   list-style-type: disc;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
@@ -446,56 +447,26 @@ h2 {
 }
 
 .img-quienes-somos {
-  width: 95%;
+  width: 90%;
   margin-top: 1.6em;
 }
 
 .caja-parrafo {
-  margin: 2em;
+  margin: 1em;
   list-style-type: disc;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
   font-size: 1.4rem;
 }
 
-.contenedor-tarjetas {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: grid;
-  grid-template-rows: 1fr 1fr 21r;
-}
-
-.trajeta-img {
-  width: 50%;
-  border-radius: 30px;
-  margin-top: 12px;
-}
-
-.tarjeta-descripcion {
-  border: 5%;
-  margin: 4%;
-  font-size: 1.2rem;
-  list-style-type: disc;
-  font-family: "Times New Roman", Times, serif;
-  text-align: center;
-}
-
-.tarjeta-2 {
-  grid-row: span 2;
-  background-color: beige;
-  width: 300px;
-  height: 350px;
-  overflow: hidden;
+.tarjetas-contenedor {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  border: 2px solid #d4a373;
+  justify-content: center;
 }
 
-.tarjeta-1 {
-  grid-row: span 3;
+.tarjeta {
   background-color: beige;
   width: 300px;
   height: 350px;
@@ -510,7 +481,22 @@ h2 {
   height: 400px;
 }
 
-.tarjetas-titulo {
+.trajeta__img {
+  width: 50%;
+  border-radius: 30px;
+  margin-top: 12px;
+}
+
+.tarjeta__descripcion {
+  border: 5%;
+  margin: 4%;
+  font-size: 1.2rem;
+  list-style-type: disc;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.tarjetas__titulo {
   font-size: 2rem;
   background-color: beige;
 }
@@ -524,10 +510,10 @@ h2 {
     font-size: 1.5rem;
     margin: 5%;
   }
-  .tarjeta-descripcion {
+  .tarjeta__descripcion {
     font-size: 1.3rem;
   }
-  .tarjetas-titulo {
+  .tarjetas__titulo {
     font-size: 3rem;
     margin-bottom: 10px;
   }
@@ -567,7 +553,7 @@ h2 {
     justify-items: center;
     align-items: center;
   }
-  .tarjetas {
+  .tarjetas-contenedor {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -575,18 +561,14 @@ h2 {
     gap: 40px;
     margin-top: 30px;
   }
-  .tarjeta-1 {
+  .tarjeta {
     width: 400px;
     height: 500px;
   }
-  .tarjeta-2 {
-    width: 400px;
-    height: 500px;
-  }
-  .tarjeta-descripcion {
+  .tarjeta__descripcion {
     font-size: 1.5rem;
   }
-  .tarjetas-titulo {
+  .tarjetas__titulo {
     font-size: 3rem;
   }
 }
